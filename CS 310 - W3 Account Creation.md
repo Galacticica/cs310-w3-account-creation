@@ -1,9 +1,9 @@
 # CS310 - W3 Account Creation
 By Reagan Zierke
 
-## How did you store the values used later in the confirmation?
-I stored them by declaring variables such as `$USERNAME`.
+## How did you invoke the `useradd` command-line tool?
+I used the ```subprocess``` and ```sys``` libraries to be able to interact with the terminal.
 
-## How did you create the `username` value?
-I utilized the translate (`tr`) function changing uppercase to lowercase and changing spaces to -.
-`tr '[:upper:]' '[:lower:]' | tr ' ' '-'`
+## How do you pass flags to the `useradd` command?
+I created a ```cmd``` variable that is a list and added each flag or parameter that needs to be passed as a seperate element of the list.
+Then I can append to the list if I have more flags to add.
